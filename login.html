@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오프렌즈</title>
+    <link rel="icon" href="./img/main.ico">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <main class="container">
+        <div class="main_logo"><a href="./index.html">
+            <img src="./img/kakaofrends.png" alt="kakaofrends">
+            <img src="./img/logo.png" alt="logo">
+        </a></div>
+        <form action="./index.html" id="login_form">
+            <input type="text" placeholder="카카오메일 아이디, 이메일, 전화번호" id="login_id">
+            <div class="login_check" id="input_id">아이디를 입력해주세요</div>
+            <input type="password" placeholder="비밀번호" id="login_password">
+            <div class="login_check">비밀번호를 입력해주세요</div>
+            <div class="login_save_box">
+                <input type="checkbox" id="login_save">
+                <label for="login_save">간편로그인 정보 저장</label>
+            </div>
+            <input type="button" value="로그인" id="login" onclick="login_check();">
+            <!-- <div class="or_txt">또는</div>
+            <input type="button" value="QR코드 로그인" class="qr_login"> -->
+            <div class="btn_box">
+                <div class="join_btn"><a href="./join.html">회원가입</a></div>
+                <div class="right_btn_box">
+                    <div class="id_search_btn"><a href="">계정 찾기</a></div>
+                    <div class="line"></div>
+                    <div class="pass_search_btn"><a href="">비밀번호 찾기</a></div>
+                </div>
+            </div>
+        </form>
+        <div class="terms_box">
+            <div class="terms"><a href="https://www.kakao.com/policy/terms?lang=ko" target="_blank">이용약관</a></div>
+            <div class="terms"><a href="https://www.kakao.com/policy/privacy?lang=ko" target="_blank">개인정보 처리방침</a></div>
+            <div class="terms"><a href="https://www.kakao.com/policy/oppolicy?lang=ko" target="_blank">운영정책</a></div>
+            <div class="terms"><a href="https://cs.kakao.com/" target="_blank">고객센터</a></div>
+            <div class="terms"><a href="https://www.kakao.com/notices?lang=ko" target="_blank">공지사항</a></div>
+            <select name="langage" id="langage">
+                <option value="">한국어</option>
+                <option value="">English</option>
+                <option value="">日本語</option>
+            </select>
+        </div>
+        <div class="bot_txt">Copyright © Kakao Corp. All rights reserved.</div>
+    </main>
+    <script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+* {font-size: 16px;}
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.main_title {
+    font-size: 3.5rem;
+    color: #F5D45C;
+    -webkit-text-stroke: 2px #000;
+    font-style: italic;
+    text-align: center;
+    margin: 100px 0 50px;
+}
+.exhibitions_box {
+    width: 80%;
+    margin: 0 auto;
+}
+.exhibitions > img {
+    width: 100%;
+    border-radius: 10px;
+}
+.ex_txt {
+    color: #555;
+}
+.ex_cnt {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+}
+.heart_box {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    background: #acacac;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+.heart_box img {
+    width: 100%;
+    height: 100%;
+}
+.heart_box > input {
+    display: none;
+}
+.heart_box .heart2 {
+    display: none;
+}
+.item_img:hover ~ .heart_box {
+    display: block;
+}
+
+.go_btn {
+    background-color: #b8b8b896;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+.exhibitions_box > hr {
+    margin: 50px 0;
+}
+
+
+/* exhibitions_detail */
+.detail_img {
+    margin-top: 10px;
+}
+.item_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    width: calc(100% / 2);
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+.item > img {
+    width: 100%;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.item_price {
+    font-size: 20px;
+    font-style: italic;
+}
+.item_name {
+    color: #777;
+    margin: 7px 0 10px;
+}
+.item_review_cnt {
+    font-size: 12px;
+    color: #a2a2a2;
+}
+.txt_box {
+    margin-top: 10px;
+}
+.ex_detail_cnt {
+    margin-top: 30px;
+    color: #555;
+}
+
+@media screen and (max-width: 1023px) {
+    * { font-size: 15px; }
+    .main_title {
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    * {font-size: 13px;}
+    .container {
+        padding-top: 60px;
+    }
+    .exhibitions_box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:479px) {
+    * {font-size: 10px;}
+    .exhibitions_box {
+        width: 100%;
+    }
+    .go_btn {
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+    .exhibitions_box > hr {
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오프렌즈</title>
+    <link rel="icon" href="./img/main.ico">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+<body>
+    <header class="header">
+        <div class="ham_box">
+            <div class="ham"></div>
+            <div class="ham"></div>
+            <div class="ham"></div>
+        </div>
+        <ul class="nav">
+            <li class="nav_item"><a href="./index.html">홈</a></li>
+            <li class="nav_item"><a href="#">베스트</a></li>
+            <li class="nav_item"><a href="./category.html">카테고리</a></li>
+            <li class="nav_item"><a href="./exhibitions.html">기획전</a></li>
+        </ul>
+        <div class="logo"><a href="./index.html">
+            <img src="./img/kakaofrends.png" alt="kakaofrends">
+            <img src="./img/logo.png" alt="logo">
+        </a></div>
+        <ul class="nav_r">
+            <li class="nav_icon"><a href="./search.html"><img src="./img/nav_icon1.png" alt="nav_icon1"></a></li>
+            <li class="nav_icon"><a href="./order.html"><img src="./img/nav_icon2.png" alt="nav_icon2"></a></li>
+            <li class="nav_icon"><a href="./cart.html"><img src="./img/nav_icon3.png" alt="nav_icon3"></a></li>
+            <li class="nav_icon"><a href="./login.html"><img src="./img/nav_icon4.png" alt="nav_icon4"></a></li>
+        </ul>
+    </header>
+    <div class="pan">
+        <ul>
+            <li><a href="./index.html"><img src="./img/logo.png" alt="" class="pan_logo"></a></li>
+            <li><a href="./best.html">베스트</a></li>
+            <li><a href="./category.html">카테고리</a></li>
+            <li><a href="./exhibitions.html">기획전</a></li>
+            <li><a href="./order.html">주문내역</a></li>
+            <li><a href="./cart.html">장바구니</a></li>
+            <li><a href="./login.html">마이페이지</a></li>
+            <li><a href="">카카오프렌즈</a></li>
+            <li><a href="">인스타그램</a></li>
+        </ul>
+        <div class="pan_close_btn">
+            <div class="close_line"></div>
+            <div class="close_line"></div>
+        </div>
+    </div>
+    <main class="container">
+        <div class="main_content">
+            <div class="img_box">
+                <img src="./img/detail_page/detail1.jpeg" alt="detail">
+                <div class="sub_img_box">
+                    <img src="./img/detail_page/detail1.jpeg" alt="detail1">
+                    <img src="./img/detail_page/detail2.jpeg" alt="detail2">
+                    <img src="./img/detail_page/detail3.jpeg" alt="detail3">
+                    <img src="./img/detail_page/detail4.jpeg" alt="detail4">
+                </div>
+            </div>
+            <div class="content_box">
+                <div class="content_title">러브 프로포즈 인형_춘식이</div>
+                <div class="content_price">35,000원</div>
+                <hr>
+                <div class="txt1">수량선택</div>
+                <div class="input_box">
+                    <input type="button" id="minus" value="-" onclick="minus();">
+                    <input type="number" value="1" id="cnt">
+                    <input type="button" id="plus" value="+" onclick="plus();">
+                    <img src="./img/icon_share.png" alt="icon_share" onclick="clipboardShare();">
+                </div>
+                <table>
+                    <tr>
+                        <th>배송방법</th>
+                        <td>택배배송</td>
+                    </tr>
+                    <tr>
+                        <th>배송비</th>
+                        <td>3,000원 <span>(30,000원 이상 구매시 무료)</span></td>
+                    </tr>
+                </table>
+                <hr>
+                <div class="price_box">
+                    <div class="final_cnt">총 수량 <span id="final_cnt">1</span>개</div>
+                    <div class="final_price">총 주문금액 <span id="price">35000</span>원</div>
+                </div>
+                <div class="order_btn_box">
+                    <input type="checkbox" name="heart" id="heart" onclick="like_check();">
+                    <label for="heart">
+                        <span class="jjim_box">
+                            <span class="heart_icon"></span>
+                            <span class="jjim_cnt">439</span>
+                        </span>
+                    </label>
+                    
+                    <div class="cart_box jjim_box"><img src="./img/nav_icon3.png" alt="cart"></div>
+                    <div class="order_btn">바로구매</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="info_box">
+            <div class="info_item" id="detail">
+                <div class="list_box">
+                    <a href="#detail" class="list" style="background-color: #f5d35c;">상세정보</a>
+                    <a href="#review" class="list">리뷰</a>
+                    <a href="#question" class="list">문의</a>
+                </div>
+                <div class="detail_box">
+                    <div class="guide_box">
+                        <p class="guide_img_box">
+                            <img src="./img/icon_guide.png" alt="icon_guide">
+                            <span>직거래 유도 주의 안내</span>
+                        </p>
+                        <p>판매자가 할인 등을 조건으로 문자/카톡 메시지로 <span style="color: red;">현금결제를 유도하면 입금하지 마시고 </span><span style="color: blue; text-decoration: underline;">쇼핑하기로 신고해주세요.</span></p>
+                    </div>
+                    <div class="detail_txt">
+                        두근 두근<br>
+                        내 사랑을 받아줘 💗<br><br>
+                        
+                        프로포즈링으로 변신한 춘식이와 함께<br>
+                        핑크 핑크한 마음을 고백해보세요 😇💘<br><br>
+                        
+                        D-DAY 📆 에 함께 할<br>
+                        러브 프로포즈 인형_춘식이을 소개합니다.
+                    </div>
+                    <img src="./img/detail_page/detail_img1.jpeg" alt="detail_img1">
+                    <div class="detail_txt">
+                        😻 : will you..marry me ? <br>
+                        러브 시즌을 맞이해 프로포즈링이 되어버린 춘식이 💍
+                    </div>
+                    <img src="./img/detail_page/detail_img2.jpeg" alt="detail_img2">
+                    <div class="detail_txt">
+                        두근 두근 나랑 결혼해주겠냥..? <br>
+                        사랑하는 사람의 손에 춘식이링을 쏘옥 ➰
+                    </div>
+                    <img src="./img/detail_page/detail_img3.jpeg" alt="detail_img3">
+                    <div class="detail_txt">
+                        춘식이와 함께라면 분명히 답은 YES 💗
+                    </div>
+                    <img src="./img/detail_page/detail_img4.jpeg" alt="detail_img4">
+                    <div class="detail_txt">
+                        고백하는 날 앙증맞은 춘식이 프로포즈링 어때요?
+                    </div>
+                    <img src="./img/detail_page/detail_img5.jpeg" alt="detail_img5">
+                    <div class="detail_txt">
+                        두근 두근 설레이는 마음을 라춘과 함께 전해보세요 💌
+                    </div>
+                    <img src="./img/detail_page/detail_img6.jpeg" alt="detail_img6">
+                    <img src="./img/detail_page/detail_img7.jpeg" alt="detail_img7">
+                    <img src="./img/detail_page/detail_img8.jpeg" alt="detail_img8">
+                    <img src="./img/detail_page/detail_img9.jpeg" alt="detail_img9">
+                    <img src="./img/detail_page/detail_img10.jpeg" alt="detail_img10">
+                    <img src="./img/detail_page/detail_img11.jpeg" alt="detail_img11">
+                    <div class="detail_txt">
+                        - 상품사이즈<br>
+                        프로포즈 케이스 : 16*16*20cm, 160g<br>
+                        춘식이 인형 : 7.5*12*8.5cm, 40g
+                    </div>
+                </div>
+                <input type="checkbox" id="fold">
+                <label for="fold">
+                    <span class="fold">상세정보 펼치기</span>
+                </label>
+            </div>
+            
+            <div class="info_item" id="review">
+                <div class="list_box">
+                    <a href="#detail" class="list">상세정보</a>
+                    <a href="#review" class="list" style="background-color: #f5d35c;">리뷰</a>
+                    <a href="#question" class="list">문의</a>
+                </div>
+                <div class="review_title_box">
+                    <div class="review_title_item">
+                        <img src="./img/icon_star2.png" alt="icon_star2">
+                        <div class="review_cnt">4.5</div>
+                    </div>
+                    <div class="review_title_item">
+                        <img src="./img/icon_review.png" alt="icon_review">
+                        <div class="review_cnt">9</div>
+                    </div>
+                </div>
+                <div class="review_write_box">
+                    <div class="review_star_box">
+                        <input type="radio" name="star_rd" id="star1" class="star_rd">
+                        <label for="star1" class="star"></label>
+                        <input type="radio" name="star_rd" id="star2" class="star_rd">
+                        <label for="star2" class="star"></label>
+                        <input type="radio" name="star_rd" id="star3" class="star_rd">
+                        <label for="star3" class="star"></label>
+                        <input type="radio" name="star_rd" id="star4" class="star_rd">
+                        <label for="star4" class="star"></label>
+                        <input type="radio" name="star_rd" id="star5" class="star_rd">
+                        <label for="star5" class="star"></label>
+                    </div>
+                    <input type="text" id="review_txt" placeholder="리뷰를 입력해주세요">
+                    <div class="review_write_btn">등록</div>
+                </div>
+                <div class="review_item_box">
+                    <div class="review_item">
+                        <img src="./img/icon_profile.png" alt="icon_profile">
+                        <div class="star_box">
+                            <img src="./img/icon_star2.png" alt="icon_star2">
+                            <img src="./img/icon_star2.png" alt="icon_star2">
+                            <img src="./img/icon_star2.png" alt="icon_star2">
+                            <img src="./img/icon_star2.png" alt="icon_star2">
+                            <img src="./img/icon_star1.png" alt="icon_star1">
+                        </div>
+                        <div class="txt_box">
+                            <span class="id_txt">hwan12345</span>
+                            <span class="date_txt">22.10.02</span>
+                        </div>
+                        <input type="checkbox" name="like_chk" class="like" id="like_chk1">
+                        <label for="like_chk1">
+                            <span class="like_box">
+                                <span class="like_box_img"></span>
+                                <span class="like_cnt">0</span>
+                            </span>
+                        </label>
+                        <div class="review_txt">친구 선물로 줬는데 완전 맘에 듭니다. 귀여워요</div>
+                    </div>
+                    <div class="review_item">
+                        <img src="./img/icon_profile.png" alt="icon_profile">
+                        <div class="star_box">
+                            <img src="./img/icon_star2.png" alt="icon_star2">
+                            <img src="./img/icon_star2.png" alt="icon_star2">
+                            <img src="./img/icon_star2.png" alt="icon_star2">
+                            <img src="./img/icon_star2.png" alt="icon_star2">
+                            <img src="./img/icon_star1.png" alt="icon_star1">
+                        </div>
+                        <div class="txt_box">
+                            <span class="id_txt">hwan12345</span>
+                            <span class="date_txt">22.10.02</span>
+                        </div>
+                        <input type="checkbox" name="like_chk" class="like" id="like_chk2">
+                        <label for="like_chk2">
+                            <span class="like_box">
+                                <span class="like_box_img"></span>
+                                <span class="like_cnt">0</span>
+                            </span>
+                        </label>
+                        <div class="review_txt">친구 선물로 줬는데 완전 맘에 듭니다. 귀여워요</div>
+                    </div>
+                </div>
+
+                <div class="page_box">
+                    <div class="page">&lt;</div>
+                    <input type="radio" name="page" id="page1" class="page_num_chk" checked="checked">
+                    <label for="page1" class="page page_num page_on">1</label>
+                    <input type="radio" name="page" id="page2" class="page_num_chk">
+                    <label for="page2" class="page page_num">2</label>
+                    <input type="radio" name="page" id="page3" class="page_num_chk">
+                    <label for="page3" class="page page_num">3</label>
+                    <input type="radio" name="page" id="page4" class="page_num_chk">
+                    <label for="page4" class="page page_num">4</label>
+                    <input type="radio" name="page" id="page5" class="page_num_chk">
+                    <label for="page5" class="page page_num">5</label>
+                    <div class="page next_btn">></div>
+                </div>
+            </div>
+
+            
+            <div class="info_item" id="question">
+                <div class="list_box">
+                    <a href="#detail" class="list">상세정보</a>
+                    <a href="#review" class="list">리뷰</a>
+                    <a href="#question" class="list" style="background-color: #f5d35c;">문의</a>
+                </div>
+                <div class="qan_write_btn">문의하기</div>
+                <div class="qan_no_txt">작성된 상품 Q&A가 없습니다.</div>
+                <div class="review_item qan_item">
+                    <img src="./img/icon_profile.png" alt="icon_profile">
+                    <div class="qan_txt">비밀문의 입니다.</div>
+                    <div class="txt_box">
+                        <span class="id_txt">hwan12345</span>
+                        <span class="date_txt">22.10.02</span>
+                    </div>
+                </div>
+                <div class="review_item qan_item">
+                    <img src="./img/icon_profile.png" alt="icon_profile">
+                    <div class="qan_txt">비밀문의 입니다.</div>
+                    <div class="txt_box">
+                        <span class="id_txt">hwan12345</span>
+                        <span class="date_txt">22.10.02</span>
+                    </div>
+                </div>
+                <div class="review_item qan_item">
+                    <img src="./img/icon_profile.png" alt="icon_profile">
+                    <div class="qan_txt">비밀문의 입니다.</div>
+                    <div class="txt_box">
+                        <span class="id_txt">hwan12345</span>
+                        <span class="date_txt">22.10.02</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#"><div class="top_btn"><img src="./img/icon_top.png" alt="icon_top"></div></a>
+    </main>
+    <footer class="footer">
+        <div class="footer_box">
+            <div class="footer_logo"></div>
+            <div class="footer_menu">
+                <div class="f_item"><a href="https://ccs.kakao.com/web/help?service=149" target="_blank">고객센터</a></div>
+                <div class="f_item">|</div>
+                <div class="f_item"><a href="https://buy.kakao.com/shopping-front/user/term-detail/PAY?channel=STORE" target="_blank">이용약관</a></div>
+                <div class="f_item">|</div>
+                <div class="f_item"><a href="https://www.kakao.com/policy/privacy?lang=ko" target="_blank">개인정보처리방침</a></div>
+                <div class="f_item">|</div>
+                <div class="f_item"><a href="https://cipr.kakao.com/guide" target="_blank">지식재산권보호센터</a></div>
+                <div class="f_item">|</div>
+                <div class="f_item"><a href="https://csafety.kakao.com/" target="_blank">안전거래센터</a></div>
+            </div>
+            <div class="footer_txt">
+                (주)카카오대표이사 : 홍은택주소 : 제주특별자치도 제주시 첨단로 242<br>
+                사업자등록번호 : 120-81-47521통신판매업신고 : 제2015 - 제주아라 - 0032호호스팅 사업자 : (주)카카오<br>
+                이메일 : cs.shopping@kakaocorp.com고객센터 : 1544-5664 (통화료 발생) / 톡상담하기 / 상담시간 : 평일 09:00~18:00 (※ 점심시간 12:00 ~ 13:00)<br>
+                Copyright © Kakao Corp. All rights reserved<br>
+                (주)카카오에서 판매하는 상품 중에는 개별판매자가 판매하는 상품이 포함되어 있습니다.개별판매자가 판매하는 상품에 대해 (주)카카오는 통신중개판매업자로서 통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

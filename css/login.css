@@ -1,0 +1,208 @@
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 10vh auto;
+}
+.main_logo {
+    position: relative;
+    width: 300px;
+    height: 80px;
+    margin: 0 auto;
+}
+.main_logo img {
+    position: absolute;
+}
+.main_logo img:nth-child(1) {
+    top: -40px;
+    left: 17%;
+    z-index: 99;
+    width: 200px;
+}
+.main_logo img:nth-child(2) {
+    top: 30px;
+    left: 0;
+    width: 300px;
+}
+.login_title {
+    font-size: 3rem;
+    text-align: center;
+}
+#login_form {
+    width: 70%;
+    border: 1px solid #efefef;
+    margin: 20px auto;
+    text-align: center;
+    padding: 3vw;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+#login_form > input, #join_form > input {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 10px 0;
+    outline: none;
+}
+#login_save {
+    accent-color: #fee500;
+}
+.login_check {
+    color: #f04c4c;
+    text-align: start;
+    padding-bottom: 20px;
+    display: none;
+}
+/* 유효성검사 빈칸 있으면 display block */
+.login_save_box {
+    width: 100%;
+    margin: 10px auto 30px;
+    overflow: hidden;
+    text-align: justify;
+}
+#login_save {
+    float: left;
+    width: auto;
+}
+.login_save_box > label {
+    float: left;
+    margin-left: 10px;
+}
+
+#login {
+    border: none;
+    background: #fee500;
+}
+.or_txt {
+    margin: 15px 0;
+    font-size: 0.8rem;
+}
+.qr_login {
+    border: none;
+}
+
+.btn_box {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+.right_btn_box {
+    display: flex;
+    gap: 10px;
+}
+.line {
+    width: 2px;
+    height: 16px;
+    background-color: gray;
+}
+.terms_box {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #555;
+    font-size: 0.85rem;
+}
+.terms_box > select {
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.bot_txt {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #login_form, input[type="text"], input[type="password"] {
+        font-size: 0.8rem;
+    }
+    .terms_box {
+        font-size: 0.6rem;
+        gap: 10px;
+    }
+    .bot_txt {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    .main_logo {
+        transform: scale(0.6);
+    }
+    #login_form {
+        font-size: 0.7rem;
+        margin: 0px auto;
+        padding: 2vw 3vw;
+    }
+    #login_form > input {
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    
+    .login_save_box {
+        margin: 8px auto 20px;
+    }
+    .line {
+        width: 1px;
+        height: 12px;
+    }
+    .terms_box {
+        font-size: 0.5rem;
+        gap: 10px;
+    }
+    .terms_box > select {
+        padding: 5px;
+        font-size: 0.5rem;
+    }
+    .bot_txt {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .container {
+        width: 100%;
+    }
+    .main_logo {
+        transform: scale(0.5);
+    }
+    #login_form {
+        font-size: 0.5rem;
+        margin: 0px auto;
+        padding: 2vw 3vw;
+    }
+    #login_form > input {
+        padding: 8px;
+        font-size: 0.5rem;
+    }
+    .right_btn_box {
+        gap: 5px;
+    }
+    .login_save_box {
+        margin: 8px auto 15px;
+    }
+    .line {
+        width: 1px;
+        height: 9px;
+    }
+    .terms_box {
+        font-size: 0.4rem;
+        gap: 5px;
+    }
+    .terms_box > select {
+        padding: 5px;
+        font-size: 0.4rem;
+    }
+    .bot_txt {
+        font-size: 0.3rem;
+    }
+}
