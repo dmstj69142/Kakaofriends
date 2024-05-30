@@ -12,10 +12,10 @@ window.addEventListener('scroll', function() {
     let window_scrollTop = $(window).scrollTop();
     let window_h = $(window).innerHeight();
     if (window_scrollTop > window_h / 5) {
-        $('.header').css("opacity", "1")
+        $('.header').css("display", "block")
     }
     else {
-        $('.header').css("opacity", "0")
+        $('.header').css("display", "none")
     }
 })
 // 판 펼치기 

@@ -1,7 +1,7 @@
 * {font-size: 16px;}
 header {
     transition: all 0.5s;
-    opacity: 0;
+    display: none;
     overflow: hidden;
 }
 .main_banner_box {
@@ -12,6 +12,7 @@ header {
     width: 85vw;
     max-width: 1400px;
     margin: 10vh auto 0;
+    position: relative;
 }
 .box_top {
     width: 300px;
@@ -48,8 +49,8 @@ header {
 
 .main_nav {
     position: absolute;
-    top: 14vh;
-    left: 10%;
+    top: 30px;
+    left: 50px;
 }
 .main_nav > ul {
     display: flex;
@@ -61,8 +62,8 @@ header {
 }
 .main_nav_r {
     position: absolute;
-    top: 13vh;
-    right: 9%;
+    top: 30px;
+    right: 30px;
 }
 .main_nav_r > ul {
     display: flex;
@@ -485,8 +486,8 @@ header {
     }
     
     .main_nav_icon img {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }   
     .main_nav {
         top: 9%;
